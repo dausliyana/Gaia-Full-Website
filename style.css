@@ -1,0 +1,186 @@
+/* Reset & global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background-color: #1e1e1e;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  color: #4caf50;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar ul li a {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #4caf50;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1e1e1e 0%, #2c2c2c 100%);
+}
+
+.hero h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #4caf50;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin-bottom: 2rem;
+  color: #cccccc;
+}
+
+.btn {
+  background: #4caf50;
+  color: #121212;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #66bb6a;
+}
+
+.section {
+  padding: 4rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  color: #4caf50;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+/* NEW: About Game Cards */
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.15);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #4caf50;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #cccccc;
+  font-size: 1rem;
+}
+
+/* Team cards and iframe remain same */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.member-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-card img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.member-card h3 {
+  color: #4caf50;
+  margin-bottom: 0.5rem;
+}
+
+.member-card p {
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+.play-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+}
